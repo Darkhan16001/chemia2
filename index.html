@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Химиялық реакция жылдамдығы | Химия</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <strong>⚗ CHEMISTRY</strong>
+      <small>1-КУРС • ИНТЕРАКТИВТІ ЛЕКЦИЯ</small>
+    </div>
+
+    <div class="top-right">
+      <span id="sectionName">Кіріспе</span>
+      <span id="timer">80:00</span>
+      <span id="pageCounter">1 / 1</span>
+    </div>
+  </header>
+
+  <main class="main" id="main">
+    <div class="slide" id="slide"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="signature">
+      <strong>BY DARKHAN</strong>
+      <span id="slideTitle">Химиялық реакция жылдамдығы</span>
+    </div>
+
+    <div class="navigation">
+      <button class="btn secondary" id="prevBtn">
+        ← Артқа
+      </button>
+
+      <button class="btn primary" id="nextBtn">
+        Келесі →
+      </button>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ОҢ ЖАҚ ТӨМЕНДЕГІ ҚҰРАЛДАР -->
+<div class="tools">
+  <button class="tool-btn" id="calcOpen">
+    🧮 Калькулятор
+  </button>
+
+  <button class="tool-btn green-btn" id="periodicOpen">
+    ⚛ Менделеев кестесі
+  </button>
+</div>
+
+<!-- КАЛЬКУЛЯТОР -->
+<div class="calculator hidden" id="calculator">
+  <div class="modal-head">
+    <h3>Калькулятор</h3>
+    <button class="close" id="calcClose">✕</button>
+  </div>
+
+  <input id="calcDisplay" readonly>
+  <div class="calc-grid" id="calcKeys"></div>
+</div>
+
+<!-- МЕНДЕЛЕЕВ КЕСТЕСІ -->
+<div class="overlay hidden" id="periodicModal">
+  <div class="periodic-panel">
+
+    <div class="modal-head">
+      <div>
+        <h2>Менделеевтің периодтық кестесі</h2>
+        <p class="muted">
+          Элементтің қазақша атауы,
+          таңбасы және атомдық массасы.
+        </p>
+      </div>
+
+      <button class="close" id="periodicClose">✕</button>
+    </div>
+
+    <div class="periodic-scroll">
+      <div class="periodic-grid" id="periodicGrid"></div>
+    </div>
+
+    <div class="element-info" id="elementInfo">
+      Элементті таңдаңыз.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
